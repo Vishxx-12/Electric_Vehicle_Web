@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: darkgreen;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav h3{
+    font-size: 27px;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.navbar h2{
+    color: #78dc20;
+    font-size: 27px;
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+p {
+    color: #555;
+}
+.header h3{
+    animation-name: shift;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+
+
+@keyframes shift {
+    0%{color: greenyellow;}
+    50%{color: aqua;}
+    100%{color: greenyellow;}
+  }
+.container {
+    max-width: 85vw;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #00631f;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    border: none;
+    transition: background 0.5s;
+}
+
+.header {
+    background: radial-gradient(white, lightgreen);
+}
+
+.header .row {
+    margin-top: 70px;
+}
+
+.btn:hover {
+    background: yellowgreen;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+    text-align: center;
+}
+
+.small_container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #000000;
+}
+
+.title::after {
+    content: '';
+    background: #78dc20;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h4 {
+    color: black;
+    font-weight: normal;
+}
+
+.col-3 p {
+    font-size: 14px;
+}
+
+.col-3 h4{
+    font-size: large;
+}
+.col-3:hover {
+    transform: translateY(-5px);
+}
+
+.brands {
+    margin: 100px auto;
+}
+
+.col-4 {
+    width: 160px;
+}
+
+.col-4 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+.col-4 img:hover {
+    filter: grayscale(100%);
+}
+
+.facts{
+    text-align: left;
+    margin: 50px 100px;
+    padding: 30px;
+}
+
+.facts h2{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+
+.footer {
+    background: #000;
+    color: aquamarine;
+    font-size: 14px;
+}
+
+.footer h3 {
+    color: bisque;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer footer-col {
+    min-width: 50px;
+    margin-bottom: 20px;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.form{
+    margin: 20px 30px;
+    display: flexbox;
+    padding: 50px;
+    text-align: center;
+    font-size: 20px ;
+}
+.form ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.form ul li{
+    margin-right: 50px;
+}
+.form .btn{
+    display: flexbox;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: darkgreen;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: aquamarine;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 1px solid darkgreen;
+    padding: 5px;
+}
+
+select:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .brands{
+        width: 150px;
+    }
+}

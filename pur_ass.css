@@ -1,0 +1,71 @@
+table {
+  border-collapse: collapse;
+  width: 92%;
+  margin: 0px auto;
+  height: 28vh;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #2dbfdf;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+table a{
+  color: blue;
+}
+  
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  h4 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  
+  input[type=text] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px #ccc;
+  }
+.btn{
+    display: inline-block;
+    background: #00631f;
+    color: white;
+    padding: 8px 20px;
+    margin: 30px 0;
+    border-radius: 30px;
+    border: none;
+    transition: background 0.5s;
+}
+.daily_travel{
+  height: 30px;
+  width: 15vw;
+  font-size: 18px;
+}
